@@ -1,9 +1,26 @@
-body{
-background-image: url('E:\Web develop\React\BroCode\Digital Clock\background.jpg');
+body {
+  background-image: url('./background/background.jpg'); /* Set the background image */
+  background-size: cover;  /* Make it cover the whole screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 100vh; /* Ensure full viewport height */
+  margin: 0; /* Remove default margin */
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.clock-container{
 
+.clock-container{
+    backdrop-filter: blur(10px);
+    
 }
 .clock{
-
+color:white;
+font-size: 5rem;
+font-weight: bold;
+font-family: monospace;
+text-shadow: 3px 3px 5px black;
+text-align: center;
+padding: 10px;
 }
